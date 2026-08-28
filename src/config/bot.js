@@ -161,9 +161,9 @@ export const botConfig = {
   economy: {
     currency: {
       // Currency display name.
-      name: "coins",
+      name: "gold",
       // Plural display name.
-      namePlural: "coins",
+      namePlural: "gold",
       // Currency symbol shown in balances.
       symbol: "$",
     },
@@ -172,18 +172,18 @@ export const botConfig = {
     startingBalance: 0,
 
     // Maximum bank amount before upgrades (if upgrades are used).
-    baseBankCapacity: 100000,
+    baseBankCapacity: 1000000,
 
     // Daily reward amount.
-    dailyAmount: 100,
+    dailyAmount: 250,
 
     // Work command random payout range.
     workMin: 10,
-    workMax: 100,
+    workMax: 470,
 
     // Beg command random payout range.
     begMin: 5,
-    begMax: 50,
+    begMax: 130,
 
     // Command cooldowns (milliseconds).
     cooldowns: {
@@ -193,12 +193,12 @@ export const botConfig = {
       rob: 4 * 60 * 60 * 1000,
     },
 
-    // Chance to succeed when robbing (0.4 = 40%).
-    robSuccessRate: 0.4,
+    // Chance to succeed when robbing (0.5 = 50%).
+    robSuccessRate: 0.5,
 
     // Jail time after failed rob (milliseconds).
-    // 3600000 = 1 hour.
-    robFailJailTime: 3600000,
+    // 300000 = 5 minutes.
+    robFailJailTime: 300000,
   },
 
   // =========================
@@ -548,6 +548,7 @@ const COMMAND_CATEGORY_FEATURE_MAP = {
   utility: "utility",
   verification: "verification",
   welcome: "welcome",
+  afk: "Ive set you AFK",
 };
 
 function normalizeCategoryKey(category) {
