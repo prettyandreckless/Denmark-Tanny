@@ -507,6 +507,7 @@ export const botConfig = {
     giveaways: true,
     birthday: true,
     counter: true,
+    deathcompass: true,
 
     // Security and self-service systems.
     verification: true,
