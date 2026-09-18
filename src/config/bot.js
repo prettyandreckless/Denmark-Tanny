@@ -596,6 +596,7 @@ const COMMAND_CATEGORY_FEATURE_MAP = {
   verification: "verification",
   welcome: "welcome",
   afk: "Ive set your AFK",
+  deathcompass: "The compass has chosen. What you find next is yours to keep."
 };
 
 function normalizeCategoryKey(category) {
