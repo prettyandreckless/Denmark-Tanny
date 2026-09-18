@@ -124,3 +124,10 @@ module.exports = {
         });
     }
 };
+module.exports = {
+    data: new SlashCommandBuilder()
+        .setName('deathcompass')
+        .setDescription('Spin the Death Compass and see what fate has waiting for you.'),
+
+    execute
+};
