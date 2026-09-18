@@ -430,6 +430,53 @@ export const botConfig = {
     },
   },
 
+    // =========================
+    // DEATH COMPASS
+    // =========================
+    deathCompass: {
+        enabled: true,
+
+        rewards: [
+            {
+                name: "Booster Role of Choice",
+                type: "boosterRole"
+            },
+            {
+                name: "+1 Level",
+                type: "level"
+            },
+            {
+                name: "Booster Role Perks — 24 Hours",
+                type: "boosterPerks"
+            },
+            {
+                name: "+500 Coins",
+                type: "coins",
+                amount: 500
+            },
+            {
+                name: "+250 Coins",
+                type: "coins",
+                amount: 250
+            },
+            {
+                name: "Custom Role Color — 24 Hours",
+                type: "roleColor"
+            },
+            {
+                name: "Double XP — 24 Hours",
+                type: "doubleXP"
+            },
+            {
+                name: "Spin Again",
+                type: "spinAgain"
+            },
+            {
+                name: "Nothing",
+                type: "nothing"
+            }
+        ]
+    },
   // =========================
   // GENERIC BOT MESSAGES
   // =========================
@@ -548,7 +595,7 @@ const COMMAND_CATEGORY_FEATURE_MAP = {
   utility: "utility",
   verification: "verification",
   welcome: "welcome",
-  afk: "Ive set you AFK",
+  afk: "Ive set your AFK",
 };
 
 function normalizeCategoryKey(category) {
